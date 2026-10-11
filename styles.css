@@ -731,13 +731,16 @@ dd {
 
 .certificate-card figure {
   margin: 0;
+  height: 450px;
+  overflow: hidden;
 }
 
 .certificate-card img {
+  display: block;
   width: 100%;
-  aspect-ratio: 375 / 543;
+  height: 100%;
   object-fit: cover;
-  background: #fff3d7;
+  aspect-ratio: 375 / 543;
 }
 
 .certificate-card figcaption {
