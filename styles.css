@@ -698,6 +698,7 @@ dd {
   gap: 14px;
   margin-top: 24px;
   padding: 2px 2px 4px;
+  align-items: start;
 }
 
 .certificate-card {
@@ -731,17 +732,15 @@ dd {
 
 .certificate-card figure {
   margin: 0;
-  height: 450px;
-  overflow: hidden;
 }
 
 .certificate-card img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
   aspect-ratio: 375 / 543;
   object-fit: contain;
+  background: #fff3d7;
 }
 
 .certificate-card figcaption {
@@ -758,6 +757,13 @@ dd {
 .certificate-card figcaption span {
   color: var(--color-secondary);
   font-size: 0.76rem;
+}
+
+@media print {
+  .certificate-card img {
+    max-width: 100%;
+    break-inside: avoid;
+  }
 }
 
 .project-list {
