@@ -738,9 +738,10 @@ dd {
 .certificate-card img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   aspect-ratio: 375 / 543;
+  object-fit: contain;
 }
 
 .certificate-card figcaption {
